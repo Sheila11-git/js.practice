@@ -1,16 +1,16 @@
-// Step 1: Create a variable named isJsProgrammingLanguage and store true
+// Create a variable name (isJsProgrammingLanguage) and store true as value
 let isJsProgrammingLanguage = true; 
 
-// Step 2: Create a variable named isJsHard and store false
+// Create a variable name (isJsHard) and store false as value
 let isJsHard = false;  
 
-// Step 3: Create a variable named favNumb
+// Create a variable name (favNumb)
 let favNumb = 7;  // Store 7 as your favorite number
 
-// Step 4: Add favNumb with the value of undefined
+// Add favNumber with the value of undefined
 let sumWithUndefined = favNumb + undefined;  
 
-// Step 5: Log all the variables to a console
+//  Log all the variables to a console
 console.log("isJsProgrammingLanguage:", isJsProgrammingLanguage);
 console.log("isJsHard:", isJsHard);
 console.log("favNumb:", favNumb);
