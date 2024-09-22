@@ -8,10 +8,10 @@ let favActorLastName = "Martinez";
 let fullName = favActorFirstName + " " + favActorLastName;
 
 // Create a variable name (uppercase) and CAPITALIZE your fav actor namr
-let uppercase = fullName.toUpperCase();
+let uppercase = "ALBERT MARTINEZ";
 
 // Create a variable name (message) and store 'My favorite actor is'(favActorName)
-let message = "My favorite actor is " + uppercase;
+let message = "My favorite actor is Albert Martinez" + uppercase;
 
 // Append this message to the (message vatiable) 'his best show is TheGeneral'sDaugther'
 message += " and her best show is The General's Dauhgter.";
