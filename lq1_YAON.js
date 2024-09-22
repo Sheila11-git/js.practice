@@ -11,8 +11,9 @@ const person2 = {
   address: "San Nicolas, Candon City, Ilocos Sur",
 };
 
-// Rearrange Name Sequence
-const rearrangeName = (fullName) => {
+// Rearrange Name Sequence(LASTNAME, FirstName, MiddleName)
+const rearrangeName = (fullName) => 
+// Split the name into an array (splitting by spaces)
   const nameParts = fullName.trim().split(' ');
   const lastName = nameParts[nameParts.length - 1];
   const firstName = nameParts[0];
@@ -20,6 +21,7 @@ const rearrangeName = (fullName) => {
   return `${lastName}, ${firstName} ${middleName}`;
 };
 
+// Rearranging the names for both personas
 const rearrangePerson1Name = rearrangeName(person1.name);
 const rearrangePerson2Name = rearrangeName(person2.name);
 
@@ -27,7 +29,7 @@ const rearrangePerson2Name = rearrangeName(person2.name);
 console.log(`${rearrangePerson1Name}, ${person1.age}, ${person1.address}`);
 console.log(`${rearrangePerson2Name}, ${person2.age}, ${person2.address}`);
 
-// Variable Manipulations
+// Variable Manipulations(Lengths of names and addresses)
 const person1NameLength = person1.name.length;
 const person2NameLength = person2.name.length;
 const person1AddressLength = person1.address.length;
