@@ -4,29 +4,31 @@ let secondFavNum = 26; // store your second favorite number
 
 // Addition
 // Add (firstFavNum & secondFavNum)
-let additionResult = firstFavNum + secondFavNum;
-console.log('Addition:', additionResult);
+let addition = firstFavNum + secondFavNum;
 
 // Subtraction
 // Subtract (firstFavNum & secondFavNum)
-let subtractionResult = firstFavNum - secondFavNum;
-console.log('Subtraction:', subtractionResult);
+let subtract = firstFavNum - secondFavNum;
 
 // Multiplication
 // Multiply (firstFavNum & secondFavNum)
-let multiplicationResult = firstFavNum * secondFavNum;
-console.log('Multiplication:', multiplicationResult);
+let multiplication = firstFavNum * secondFavNum;
 
 // Division
 // Divide (firstFavNum & secondFavNum)
-let divisionResult = firstFavNum / secondFavNum;
-console.log('Division:', divisionResult);
+let division = firstFavNum / secondFavNum;
 
 // Modulus (Remainder)
-let modulusResult = firstFavNum % secondFavNum;
-console.log('Modulus:', modulusResult);
+let modulus = firstFavNum % secondFavNum;
 
 // Exponentation (Power)
 // Check the power of (firstFavNum) raise to secondFavNun
-let exponentationResult = firstFavNum ** secondFavNum;
-console.log('Exponentation', exponentationResult);
+let exponentation = firstFavNum ** secondFavNum;
+
+console.log(firstFavNum);
+console.log(secondFavNum);
+console.log(addition);
+console.log(multiplication);
+console.log(division);
+console.log(modulus);
+console.log(ecponentation);
