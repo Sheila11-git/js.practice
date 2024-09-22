@@ -25,10 +25,11 @@ let modulus = firstFavNum % secondFavNum;
 // Check the power of (firstFavNum) raise to secondFavNun
 let exponentation = firstFavNum ** secondFavNum;
 
+// Log all variables in console
 console.log(firstFavNum);
 console.log(secondFavNum);
 console.log(addition);
 console.log(multiplication);
 console.log(division);
 console.log(modulus);
-console.log(ecponentation);
+console.log(exponentation);
