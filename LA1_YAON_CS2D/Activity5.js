@@ -13,8 +13,8 @@ let uppercase = fullName.toUpperCase();
 // Create a variable name (message) and store 'My favorite actor is'(favActorName)
 let message = "My favorite actor is " + uppercase;
 
-// Append this message to the (message vatiable) 'his best show is TheGeneralDaugther'
-message += " and her best show is GeneraDaugther.";
+// Append this message to the (message vatiable) 'his best show is TheGeneral'sDaugther'
+message += " and her best show is The General's Dauhgter.";
 
 // Log all variables to the console
 console.log("First Name:", favActorFirstName);
