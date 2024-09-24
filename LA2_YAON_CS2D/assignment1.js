@@ -1,63 +1,62 @@
-// Define a Student class to hold student information
-class Student {
-    // Constructor to initialize the student's details
-    constructor(firstName, middleName, lastName, birthdate, birthplace, address, course, year, dreamJob) {
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.birthdate = birthdate;
-        this.birthplace = birthplace;
-        this.address = address;
-        this.course = course;
-        this.year = year;
-        this.dreamJob = dreamJob;
-    }
+//STUDENT INFORMATION
+// storing the firsy student info
+let stud1name = "[SHEILA MAE CAMPILLA YAON]";
+let birthdate1 = "[NOVEMBER 26, 2003]";
+let birthplace1 = "[BARANGAY BIGBIGA, SANTIAGO, ILOCOS SUR, PHILIPPINES 2707]";
+let address1 = "[BARANGAY SAN NICOLAS, SAN ESTEBAN, ILOCOS SUR, PHILIPPINES 2706]";
+let courseandyear1 = "[Bachelor of Science in Computer Science 2nd Year]";
+let dreamJobAfterGraduation1 = "[MACHINE LEARNING ENGINEER]";
 
-    // Getter to get the student's full name in uppercase
-    get fullNameUppercase() {
-        return `${this.firstName.toUpperCase()} ${this.middleName.toUpperCase()} ${this.lastName.toUpperCase()}`;
-    }
+// Formatting the first student's information
+stud1name += " was born ";
+birthdate1 += " at ";
+birthplace1 += ", and currently living at";
+address1 += ", [Sheila Mae Campilla Yaon]  is taking up";
+courseandyear1 += " and dream to be ";
+dreamJobAfterGraduation1 += " after graduation.";
 
-    // Getter to get the student's full name in lowercase
-    get fullNameLowercase() {
-        return `${this.firstName.toLowerCase()} ${this.middleName.toLowerCase()} ${this.lastName.toLowerCase()}`;
-    }
+// Concatenating the first student's info into a single string
+let studinfo1 = stud1name + birthdate1 + birthplace1 + address1 + courseandyear1 + dreamJobAfterGraduation1;
 
-    // Method to display the student's full information
-    displayInfo() {
-        const fullNameUpper = this.fullNameUppercase;  // Use getter, no need to call as a method
-        const fullNameLower = this.fullNameLowercase;  // Use getter, no need to call as a method
+// Storing the second student info
+let stud2name = "[JENNALYN FUENTES SOLIMAN]";
+let birthdate2 = "[DECEMBER 19, 2004]";
+let birthplace2 = "[BARANGAY SAN NICOLAS, CANDON CITY, ILOCOS SUR, PHILIPPINES 2710]";
+let address2 = "[BARANGAY SAN NICOLAS, CANDON CITY, ILOCOS SUR, PHILIPPINES 2710]";
+let courseandyear2 = "[Bachelor of Science in Computer Science 2nd Year]";
+let dreamJobAfterGraduation2 = "[WEB DEVELOPER]";
 
-        return `[${fullNameUpper}] was born [${this.birthdate.toUpperCase()}] at [${this.birthplace.toUpperCase()}], ` +
-               `and currently living at [${this.address.toUpperCase()}]. ` +
-               `[${fullNameLower}] is taking up [${this.course.toUpperCase()}] and dreams to be ` +
-               `[${this.dreamJob.toUpperCase()}] after graduation.`;
-    }
-}
+// Formatting the second student's information
+stud2name += " was born ";
+birthdate2 += " at ";
+birthplace2 += ", and currently living at";
+address2 += ", [Jennalyn Fuentes Soliman]  is taking up";
+courseandyear2 += " and dream to be ";
+dreamJobAfterGraduation2 += " after graduation.";
 
-// Create three Student objects
-const student1 = new Student(
-    "Sheila Mae", "Campilla", "Yaon", "November 26, 2003",
-    "Barangay Bigbiga, Santiago, Ilocos Sur, Philippines 2706",
-    "Barangay San Nicolas, San Esteban, Ilocos Sur, Philippines 2706",
-    "Bachelor of Science in Computer Science", "2nd year", "Machine Learning Engineer"
-);
+// Concatenating the second student's info into a single string
+let studinfo2 = stud2name + birthdate2 + birthplace2 + address2 + courseandyear2 + dreamJobAfterGraduation2;
 
-const student2 = new Student(
-    "Jennalyn", "Fuentes", "Soliman", "December 19, 2004",
-    "Barangay San Nicolas, Candon City, Ilocos Sur, Philippines 2710",
-    "Barangay Bagani Gabor, Candon City, Ilocos Sur, Philippines 2710",
-    "Bachelor of Science in Computer Science", "2nd year", "Web Developer"
-);
+// storing the third student info
+let stud3name = "[LOVELY TRINIDAD RIGOR]";
+let birthdate3 = "[MAY 17, 2005]";
+let birthplace3 = "[BARANGAY DAN-AR, SANTIAGO, ILOCOS SUR, PHILIPPINES 2707]";
+let address3 = "[BARANGAY DAN-AR, SANTIAGO, ILOCOS SUR, PHILIPPINES 2707]";
+let courseandyear3 = "[Bachelor of Arts in English Language 2nd Year]";
+let dreamJobAfterGraduation3 = "[Teacher/English Tutor]";
 
-const student3 = new Student(
-    "Lovely", "Trinidad", "Rigor", "May 17, 2005",
-    "Barangay Dan-Ar, Santiago, Ilocos Sur, Philippines 2707",
-    "Barangay Dan-Ar, Santiago, Ilocos Sur, Philippines 2707",
-    "Bachelor of Arts in English Language", "2nd year", "English Tutor"
-);
+// Formatting the third student's information
+stud3name += " was born ";
+birthdate3 += " at ";
+birthplace3 += ", and currently living at";
+address3 += ", [Lovely Trinidad Rigo] is taking up";
+courseandyear3 += " and dream to be ";
+dreamJobAfterGraduation3 += " after graduation.";
 
-// Print the information of all three students
-console.log(student1.displayInfo());
-console.log(student2.displayInfo());
-console.log(student3.displayInfo());
+// Concatenating the first student's info into a single string
+let studinfo3 = stud3name + birthdate3 + birthplace3 + address3 + courseandyear3 + dreamJobAfterGraduation3;
+
+// Display the all information of the three student's
+console.log(studinfo1);
+console.log(studinfo2);
+console.log(studinfo3);
