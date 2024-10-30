@@ -7,13 +7,14 @@ let age = 20;                     // user's Age
 let favoriteNumber = 7;           // user's Favorite Number
 let favoriteColor = "Black";      // user's Favorite Color
 
-// Create a user Profile object to hold the information of the user
+// Create a user profile object to hold the information of the user
 let userProfile = {
-  firstName: firstName
-  lastName: lastName
-  age: age
-  favoriteNumber: favoriteNumber
-  favoriteColor: favoriteColor
+    firstName: firstName,
+    lastName: lastName,
+    age: age,
+    favoriteNumber: favoriteNumber,
+    favoriteColor: favoriteColor
+};
 
 // log user information to the console 
 console.log("User Profile");
