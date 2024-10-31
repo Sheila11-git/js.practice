@@ -1,3 +1,5 @@
+// Problem 5
+
 let favoriteColors = [];
 
 // Add your favorite colors directly to the array
