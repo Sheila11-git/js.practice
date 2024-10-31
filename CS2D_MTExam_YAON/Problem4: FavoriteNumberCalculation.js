@@ -1,3 +1,5 @@
+// Problem 4
+
 // Declare a variable to hold the favorite number
 let favNumber = 7;                                 // The user's actual favorite number
 let guess;                                        // Store the user's guess
