@@ -1,3 +1,5 @@
+// Problem 7&8
+
 // Arrays to hold students for each subject
 let DSA = [];
 let PL = [];
