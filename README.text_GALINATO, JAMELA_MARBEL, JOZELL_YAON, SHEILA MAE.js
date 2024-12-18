@@ -1,8 +1,11 @@
-// Define bus data structure
+// Basic structure for bhs reservation sytem
+// This code handles ticket reservation for buses travelling to different location.
+
+//Define data structurebfor buses
 const buses = [
   {
     travelLocation: "Cubao",
-    seats: new Array(30).fill("AVAILABLE"), // Array of 30 seats, all initially available
+    seats: new Array(30).fill("AVAILABLE"), // Initially, all seats are set to available
   },
   {
     travelLocation: "Baguio",
@@ -14,12 +17,12 @@ const buses = [
   },
 ];
 
-// Define ticket person user data
+// Ticket Person credentials for simplicity
 const ticketPersons = [
-  { username: "admin", password: "password123" }, // Single ticket person account for authentication
+  { username: "admin", password: "password123" }, // Ticket person account for authentication
 ];
 
-// User authentication function
+// User function to authenticate ticket
 function authenticateTicketPerson(username, password) {
   // Checks if provided username and password match any user in `ticketPersons`
   return ticketPersons.some(
@@ -27,7 +30,7 @@ function authenticateTicketPerson(username, password) {
   );
 }
 
-// Function to display bus information
+// Function to display all available bus information
 function displayBusInfo(buses) {
   // Loops through each bus and logs its travel location
   buses.forEach((bus, index) => {
@@ -35,7 +38,7 @@ function displayBusInfo(buses) {
   });
 }
 
-// Function to display passenger list for a bus
+// Function for the seat statues for a specific bus
 function displayPassengerList(bus) {
   // Logs the travel location and lists all seats with their statuses
   console.log(`\n${bus.travelLocation} - Passenger List`);
@@ -50,7 +53,7 @@ function findAvailableSeat(bus) {
   return bus.seats.findIndex((seat) => seat === "AVAILABLE");
 }
 
-// Function to add a reservation
+// Add a reservation
 function addReservation(bus, seatIndex, customerName) {
   // Assigns the customer's name to the given seat if it's valid
   if (seatIndex !== -1) {
@@ -60,7 +63,7 @@ function addReservation(bus, seatIndex, customerName) {
   return false; // Returns false if no valid seat was found
 }
 
-// Function to remove a reservation
+// Remove a reservation
 function removeReservation(bus, seatIndex) {
   // Resets a reserved seat to "AVAILABLE" if it contains a reservation
   if (bus.seats[seatIndex] !== "AVAILABLE") {
